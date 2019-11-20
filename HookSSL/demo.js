@@ -11,6 +11,7 @@ setTimeout(function(){
     var SSLContext = Java.use("javax.net.ssl.SSLContext");
 // Load CAs from an InputStream
 console.log("[+] Loading our CA...")
+var cf;
 cf = CertificateFactory.getInstance("X.509");
 try {
     var fileInputStream = FileInputStream.$new("/data/local/tmp/cert-der.crt");
